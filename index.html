@@ -117,5 +117,30 @@
         <p>© 2025 Irakam Chaithanya | Digital Marketing Portfolio</p>
     </footer>
 
+    <!-- Scroll-triggered Skills Animation Script -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const skillsSection = document.getElementById('skills');
+            const fills = document.querySelectorAll('.fill');
+
+            const sectionTop = skillsSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight - 100) { // triggers 100px before section fully visible
+                fills.forEach(fill => {
+                    const width = fill.getAttribute('data-width') || fill.style.width;
+                    fill.style.transition = 'width 1.5s ease-in-out';
+                    fill.style.width = width;
+                });
+            }
+        });
+
+        // Initialize fills to 0
+        document.querySelectorAll('.fill').forEach(fill => fill.style.width = '0');
+    </script>
+
 </body>
 </html>
+
+   
+       
