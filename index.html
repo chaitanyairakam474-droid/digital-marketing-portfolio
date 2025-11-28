@@ -8,11 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav>
+    <nav data-aos="fade-down">
         <div class="logo">Chaithanya | Portfolio</div>
         <ul>
             <li><a href="#about">About</a></li>
@@ -23,26 +26,29 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <h1>Hi, I'm Irakam Chaithanya</h1>
-        <p>Digital Marketing Intern | SEO | Google Ads | Email Marketing | Web Design</p>
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-bg"></div>
+        <h1>Hi, I'm <span>Irakam Chaithanya</span></h1>
+        <p>Digital Marketing Intern • SEO • Google Ads • Email Marketing • Web Design</p>
         <a href="CHAITANYA resume.pdf" download>
             <button>Download Resume</button>
         </a>
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
         <p>
-            I am a Digital Marketing Intern specializing in SEO, Google Ads, content strategy, email marketing,
-            and web design. I enjoy creating user-focused digital experiences and analyzing performance metrics.
+            I am a Digital Marketing Intern specializing in SEO, Google Ads, content strategy,
+            email marketing, and web design. I enjoy creating user-focused digital experiences
+            and analyzing performance metrics to improve business results.
         </p>
     </section>
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" data-aos="fade-up">
         <h2>Core Skills</h2>
+
         <div class="skill">
             <p>SEO</p>
             <div class="skill-bar"><div class="fill" style="width: 90%;"></div></div>
@@ -67,56 +73,44 @@
             <p>Marketing Analytics</p>
             <div class="skill-bar"><div class="fill" style="width: 80%;"></div></div>
         </div>
+
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
         <h2>Featured Projects</h2>
         <div class="project-container">
 
-            <!-- The Frugal Foodie Project -->
-            <div class="project-card">
+            <!-- SEO Project -->
+            <div class="project-card" data-aos="zoom-in">
                 <h3>The Frugal Foodie – SEO Project</h3>
                 <p>Self-initiated project focusing on website structure, keyword planning,
                    SEO optimization, and content strategy.</p>
-                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie" target="_blank">
-                    <button>View Home</button>
-                </a>
-                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie/blog" target="_blank">
-                    <button>View Blog</button>
-                </a>
-                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie/pricing-plans/list" target="_blank">
-                    <button>View Pricing Plans</button>
-                </a>
+                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie" target="_blank"><button>View Home</button></a>
+                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie/blog" target="_blank"><button>View Blog</button></a>
+                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie/pricing-plans/list" target="_blank"><button>View Pricing</button></a>
             </div>
 
-            <!-- Email Marketing Campaigns -->
-            <div class="project-card">
+            <!-- Email Campaigns -->
+            <div class="project-card" data-aos="zoom-in">
                 <h3>Email Marketing Campaigns</h3>
-                <p>Created segmentation-based campaigns with subject line testing
-                   and engagement analysis.</p>
-                <a href="https://chaitanyairakam.wixsite.com/so/afPeFzLZ2?languageTag=en&cid=547bc54b-dfe4-4ff8-82d0-88a930bfc677" target="_blank">
-                    <button>View Campaign 1</button>
-                </a>
-                <a href="https://chaitanyairakam.wixsite.com/so/61PeA-Z4q?languageTag=en&cid=547bc54b-dfe4-4ff8-82d0-88a930bfc677" target="_blank">
-                    <button>View Campaign 2</button>
-                </a>
+                <p>Created segmentation-based campaigns with subject line testing and engagement analysis.</p>
+                <a href="https://chaitanyairakam.wixsite.com/so/afPeFzLZ2" target="_blank"><button>Campaign 1</button></a>
+                <a href="https://chaitanyairakam.wixsite.com/so/61PeA-Z4q" target="_blank"><button>Campaign 2</button></a>
             </div>
 
-            <!-- Wix Website Designs -->
-            <div class="project-card">
+            <!-- Wix Designs -->
+            <div class="project-card" data-aos="zoom-in">
                 <h3>Wix Website Designs</h3>
                 <p>Designed responsive and visually appealing websites using Wix Studio.</p>
-                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie" target="_blank">
-                    <button>View Live Website</button>
-                </a>
+                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie" target="_blank"><button>View Website</button></a>
             </div>
 
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <h2>Contact Me</h2>
         <p>Email: <strong>chaitanyairakam474@gmail.com</strong></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/chaitanya-irakam-0a0a25398/">View Profile</a></p>
@@ -130,7 +124,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer data-aos="fade-up">
         <div class="socials">
             <a href="https://linkedin.com/in/chaitanya-irakam-0a0a25398/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
@@ -138,29 +132,15 @@
         <p>© 2025 Irakam Chaithanya | Digital Marketing Portfolio</p>
     </footer>
 
-    <!-- Scroll-triggered Skills Animation Script -->
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
-        window.addEventListener('scroll', () => {
-            const skillsSection = document.getElementById('skills');
-            const fills = document.querySelectorAll('.fill');
-
-            const sectionTop = skillsSection.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-
-            if (sectionTop < windowHeight - 100) { // triggers 100px before section fully visible
-                fills.forEach(fill => {
-                    const width = fill.getAttribute('data-width') || fill.style.width;
-                    fill.style.transition = 'width 1.5s ease-in-out';
-                    fill.style.width = width;
-                });
-            }
+        AOS.init({
+            duration: 1200,
+            once: true
         });
-
-        // Initialize fills to 0
-        document.querySelectorAll('.fill').forEach(fill => fill.style.width = '0');
     </script>
 
 </body>
 </html>
-
-
