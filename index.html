@@ -17,254 +17,264 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
     <style>
         /* ====== SKILLS CSS ====== */
-        #skills { padding: 70px 50px; max-width: 1100px; margin: auto; }
-        .skill { margin-bottom: 25px; }
-        .skill p { margin-bottom: 8px; font-weight: 600; }
+        #skills {
+            padding: 70px 50px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .skill {
+            margin-bottom: 25px;
+        }
+        .skill p {
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
         .skill-bar {
-            height: 25px; border-radius: 20px; background: #e0e0ff;
-            overflow: hidden; position: relative;
+            height: 25px;
+            border-radius: 20px;
+            background: #e0e0ff;
+            overflow: hidden;
+            position: relative;
         }
         .fill {
-            height: 100%; width: 0; border-radius: 20px;
-            color: white; font-weight: 600; display: flex;
-            align-items: center; justify-content: flex-end;
-            padding-right: 10px; box-sizing: border-box;
+            height: 100%;
+            width: 0;
+            border-radius: 20px;
+            color: white;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            box-sizing: border-box;
             transition: width 1.5s ease-in-out;
         }
-        .fill[data-width="90%"] { background: linear-gradient(90deg,#4caf50,#81c784); }
-        .fill[data-width="85%"] { background: linear-gradient(90deg,#2196f3,#64b5f6); }
-        .fill[data-width="80%"] { background: linear-gradient(90deg,#ff9800,#ffb74d); }
-        .fill[data-width="75%"] { background: linear-gradient(90deg,#f44336,#e57373); }
-
-        /* ===== CONTACT SECTION ===== */
+        /* Gradient based on percentage */
+        .fill[data-width="90%"] { background: linear-gradient(90deg, #4caf50, #81c784); }
+        .fill[data-width="85%"] { background: linear-gradient(90deg, #2196f3, #64b5f6); }
+        .fill[data-width="80%"] { background: linear-gradient(90deg, #ff9800, #ffb74d); }
+        .fill[data-width="75%"] { background: linear-gradient(90deg, #f44336, #e57373); }
+        
+        /* Contact Section */
         #contact {
-            padding: 70px 40px;
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-        }
-        #contact h2 {
-            margin-bottom: 20px;
-        }
-        .contact-box {
-            background: #ffffff;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .contact-item {
-            margin: 15px 0;
-            font-size: 1.1rem;
-        }
-        .contact-item i {
-            margin-right: 10px;
-            color: #1a73e8;
-        }
-        footer {
-            margin-top: 50px;
-            padding: 20px;
-            text-align: center;
+            padding: 70px 50px;
             background: #f7f7ff;
+            text-align: center;
+        }
+        #contact a {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+            text-decoration: none;
             font-weight: 600;
+        }
+        #contact a:hover {
+            color: #4a4aff;
         }
     </style>
 </head>
-
 <body>
 
-<!-- Navigation -->
-<nav data-aos="fade-down">
-    <div class="logo">Chaithanya | Portfolio</div>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Navigation -->
+    <nav data-aos="fade-down">
+        <div class="logo">Chaithanya | Portfolio</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Hero Section -->
-<section class="hero" data-aos="fade-up">
-    <div class="hero-bg"></div>
-    <h1>Hi, I'm <span>Irakam Chaithanya</span></h1>
-    <p>Digital Marketing Intern • SEO • Google Ads • Email Marketing • Web Design</p>
-    <a href="CHAITANYA resume.pdf" download>
-        <button>Download Resume</button>
-    </a>
-</section>
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-bg"></div>
+        <h1>Hi, I'm <span>Irakam Chaithanya</span></h1>
+        <p>Digital Marketing Intern • SEO • Google Ads • Email Marketing • Web Design</p>
+        <a href="CHAITANYA resume.pdf" download>
+            <button>Download Resume</button>
+        </a>
+    </section>
 
-<!-- About -->
-<section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>
-        I am a Digital Marketing Intern specializing in SEO, Google Ads, content strategy,
-        email marketing, and web design. I enjoy creating user-focused digital experiences
-        and analyzing performance metrics to improve business results.
-    </p>
-</section>
+    <!-- About -->
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+            I am a Digital Marketing Intern specializing in SEO, Google Ads, content strategy,
+            email marketing, and web design. I enjoy creating user-focused digital experiences
+            and analyzing performance metrics to improve business results.
+        </p>
+    </section>
 
-<!-- Skills -->
-<section id="skills" data-aos="fade-up">
-    <h2>Core Skills</h2>
-    
-    <div class="skill"><p>SEO</p><div class="skill-bar"><div class="fill" data-width="90%">90%</div></div></div>
-
-    <div class="skill"><p>Google Ads</p><div class="skill-bar"><div class="fill" data-width="85%">85%</div></div></div>
-
-    <div class="skill"><p>Email Marketing</p><div class="skill-bar"><div class="fill" data-width="80%">80%</div></div></div>
-
-    <div class="skill"><p>Content Strategy</p><div class="skill-bar"><div class="fill" data-width="85%">85%</div></div></div>
-
-    <div class="skill"><p>Wix Website Design</p><div class="skill-bar"><div class="fill" data-width="75%">75%</div></div></div>
-
-    <div class="skill"><p>Marketing Analytics</p><div class="skill-bar"><div class="fill" data-width="80%">80%</div></div></div>
-
-</section>
-
-<!-- Projects -->
-<section id="projects" data-aos="fade-up">
-    <h2>Featured Projects</h2>
-
-    <div class="project-container">
-        <div class="project-card" data-aos="zoom-in">
-            <h3>The Frugal Foodie – SEO Project</h3>
-            <p>Self-initiated project focusing on website structure, keyword planning,
-               SEO optimization, and content strategy.</p>
-            <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie" target="_blank"><button>View Home</button></a>
-            <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie/blog" target="_blank"><button>View Blog</button></a>
-            <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie/pricing-plans/list" target="_blank"><button>View Pricing</button></a>
+    <!-- Skills -->
+    <section id="skills" data-aos="fade-up">
+        <h2>Core Skills</h2>
+        <div class="skill">
+            <p>SEO</p>
+            <div class="skill-bar">
+                <div class="fill" data-width="90%">90%</div>
+            </div>
         </div>
-
-        <div class="project-card" data-aos="zoom-in">
-            <h3>Email Marketing Campaigns</h3>
-            <p>Created segmentation-based campaigns with subject line testing and engagement analysis.</p>
-            <a href="https://chaitanyairakam.wixsite.com/so/afPeFzLZ2" target="_blank"><button>Campaign 1</button></a>
-            <a href="https://chaitanyairakam.wixsite.com/so/61PeA-Z4q" target="_blank"><button>Campaign 2</button></a>
+        <div class="skill">
+            <p>Google Ads</p>
+            <div class="skill-bar">
+                <div class="fill" data-width="85%">85%</div>
+            </div>
         </div>
-
-        <div class="project-card" data-aos="zoom-in">
-            <h3>Wix Website Designs</h3>
-            <p>Designed responsive and visually appealing websites using Wix Studio.</p>
-            <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie" target="_blank"><button>View Website</button></a>
+        <div class="skill">
+            <p>Email Marketing</p>
+            <div class="skill-bar">
+                <div class="fill" data-width="80%">80%</div>
+            </div>
         </div>
-    </div>
-</section>
-
-<!-- Certificates -->
-<section id="certificates" data-aos="fade-up">
-    <h2>Certificates</h2>
-    <div class="certificate-container">
-
-        <div class="certificate-card">
-            <h3>SEMrush – SEO Fundamentals</h3>
-            <a href="https://static.semrush.com/academy/certificates/b8a8d65e33/chaitanya-irakam_4.pdf" target="_blank">
-                <button>View Certificate</button>
-            </a>
+        <div class="skill">
+            <p>Content Strategy</p>
+            <div class="skill-bar">
+                <div class="fill" data-width="85%">85%</div>
+            </div>
         </div>
-
-        <div class="certificate-card">
-            <h3>SEMrush – Content Marketing</h3>
-            <a href="https://static.semrush.com/academy/certificates/ded2497d5a/chaitanya-irakam_25.pdf" target="_blank">
-                <button>View Certificate</button>
-            </a>
+        <div class="skill">
+            <p>Wix Website Design</p>
+            <div class="skill-bar">
+                <div class="fill" data-width="75%">75%</div>
+            </div>
         </div>
-
-        <div class="certificate-card">
-            <h3>Saylor Academy – BUS502: Strategic Marketing</h3>
-            <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=5115911558IC" target="_blank">
-                <button>View Certificate</button>
-            </a>
+        <div class="skill">
+            <p>Marketing Analytics</p>
+            <div class="skill-bar">
+                <div class="fill" data-width="80%">80%</div>
+            </div>
         </div>
+    </section>
 
-        <div class="certificate-card">
-            <h3>HubSpot – Email Marketing</h3>
-            <a href="https://app-na2.hubspot.com/academy/achievements/h2sf6ts1/en/1/chaitanya-irakam/email-marketing" target="_blank">
-                <button>View Certificate</button>
-            </a>
+    <!-- Projects -->
+    <section id="projects" data-aos="fade-up">
+        <h2>Featured Projects</h2>
+        <div class="project-container">
+            <div class="project-card" data-aos="zoom-in">
+                <h3>The Frugal Foodie – SEO Project</h3>
+                <p>Self-initiated project focusing on website structure, keyword planning,
+                   SEO optimization, and content strategy.</p>
+                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie" target="_blank"><button>View Home</button></a>
+                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie/blog" target="_blank"><button>View Blog</button></a>
+                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie/pricing-plans/list" target="_blank"><button>View Pricing</button></a>
+            </div>
+
+            <div class="project-card" data-aos="zoom-in">
+                <h3>Email Marketing Campaigns</h3>
+                <p>Created segmentation-based campaigns with subject line testing and engagement analysis.</p>
+                <a href="https://chaitanyairakam.wixsite.com/so/afPeFzLZ2" target="_blank"><button>Campaign 1</button></a>
+                <a href="https://chaitanyairakam.wixsite.com/so/61PeA-Z4q" target="_blank"><button>Campaign 2</button></a>
+            </div>
+
+            <div class="project-card" data-aos="zoom-in">
+                <h3>Wix Website Designs</h3>
+                <p>Designed responsive and visually appealing websites using Wix Studio.</p>
+                <a href="https://chaitanyairakam.wixstudio.com/the-frugal-foodie" target="_blank"><button>View Website</button></a>
+            </div>
         </div>
+    </section>
 
-        <div class="certificate-card">
-            <h3>Google – AI-Powered Shopping Ads Certification</h3>
-            <a href="https://drive.google.com/file/d/18XMIOdSVFjt596VrrHNZrozh7GGVqGe5/view?usp=sharing" target="_blank">
-                <button>View Certificate</button>
-            </a>
+    <!-- Certificates -->
+    <section id="certificates" data-aos="fade-up">
+        <h2>Certificates</h2>
+        <div class="certificate-container">
+
+            <div class="certificate-card">
+                <h3>SEMrush – SEO Fundamentals</h3>
+                <a href="https://static.semrush.com/academy/certificates/b8a8d65e33/chaitanya-irakam_4.pdf" target="_blank">
+                    <button>View Certificate</button>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <h3>SEMrush – Content Marketing</h3>
+                <a href="https://static.semrush.com/academy/certificates/ded2497d5a/chaitanya-irakam_25.pdf" target="_blank">
+                    <button>View Certificate</button>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <h3>Saylor Academy – BUS502: Strategic Marketing</h3>
+                <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=5115911558IC" target="_blank">
+                    <button>View Certificate</button>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <h3>HubSpot – Email Marketing</h3>
+                <a href="https://app-na2.hubspot.com/academy/achievements/h2sf6ts1/en/1/chaitanya-irakam/email-marketing" target="_blank">
+                    <button>View Certificate</button>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <h3>Google – AI-Powered Shopping Ads Certification</h3>
+                <a href="https://drive.google.com/file/d/18XMIOdSVFjt596VrrHNZrozh7GGVqGe5/view?usp=sharing" target="_blank">
+                    <button>View Certificate</button>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <h3>Saylor Academy – BUS632: Digital Marketing & Advertising</h3>
+                <a href="https://drive.google.com/file/d/1N6DKamX0-HtOCykc4m6msgRFZBWbj1i3/view?usp=sharing" target="_blank">
+                    <button>View Certificate</button>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <h3>Google Ads Display Certification</h3>
+                <a href="https://drive.google.com/file/d/18XMIOdSVFjt596VrrHNZrozh7GGVqGe5/view?usp=sharing" target="_blank">
+                    <button>View Certificate</button>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <h3>Google Ads Search Certification</h3>
+                <a href="https://drive.google.com/file/d/1N6DKamX0-HtOCykc4m6msgRFZBWbj1i3/view?usp=sharing" target="_blank">
+                    <button>View Certificate</button>
+                </a>
+            </div>
+
         </div>
+    </section>
 
-        <div class="certificate-card">
-            <h3>Saylor Academy – BUS632: Digital Marketing and Advertising</h3>
-            <a href="https://drive.google.com/file/d/1N6DKamX0-HtOCykc4m6msgRFZBWbj1i3/view?usp=sharing" target="_blank">
-                <button>View Certificate</button>
-            </a>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>You can reach me through the following:</p>
 
-        <div class="certificate-card">
-            <h3>Google Ads Display Certification</h3>
-            <a href="https://drive.google.com/file/d/18XMIOdSVFjt596VrrHNZrozh7GGVqGe5/view?usp=sharing" target="_blank">
-                <button>View Certificate</button>
-            </a>
-        </div>
+        <a href="mailto:chaitanyairakam474@gmail.com">
+            📧 Email: chaitanyairakam474@gmail.com
+        </a>
 
-        <div class="certificate-card">
-            <h3>Google Ads Search Certification</h3>
-            <a href="https://drive.google.com/file/d/1N6DKamX0-HtOCykc4m6msgRFZBWbj1i3/view?usp=sharing" target="_blank">
-                <button>View Certificate</button>
-            </a>
-        </div>
+        <a href="tel:+918978303120">
+            📞 Phone: +91 89783 03120
+        </a>
 
-    </div>
-</section>
+        <a href="https://www.linkedin.com/in/chaitanya-irakam-0a0a25398/" target="_blank">
+            🔗 LinkedIn: View Profile
+        </a>
+    </section>
 
-<!-- CONTACT SECTION -->
-<section id="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-
-    <div class="contact-box">
-
-        <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:chaitanyairakam474@gmail.com">chaitanyairakam474@gmail.com</a>
-        </div>
-
-        <div class="contact-item">
-            <i class="fas fa-phone-alt"></i>
-            <a href="tel:+918978303120">+91 89783 03120</a>
-        </div>
-
-        <div class="contact-item">
-            <i class="fab fa-linkedin"></i>
-            <a href="https://https://www.linkedin.com/in/chaitanya-irakam-0a0a25398/>LinkedIn Profile</a>
-        </div>
-
-        <div class="contact-item">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/chaitanyairakam474-droid" target="_blank">GitHub Portfolio</a>
-        </div>
-
-    </div>
-</section>
-
-<footer>
-    © 2025 Chaithanya Irakam — All Rights Reserved
-</footer>
-
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-
-    // Animate skill bars
-    window.addEventListener('load', () => {
-        const fills = document.querySelectorAll('.fill');
-        fills.forEach(fill => {
-            const width = fill.getAttribute('data-width');
-            fill.style.width = width;
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // Animate skill bars
+        window.addEventListener('load', () => {
+            const fills = document.querySelectorAll('.fill');
+            fills.forEach(fill => {
+                const width = fill.getAttribute('data-width');
+                fill.style.width = width;
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>
